@@ -171,6 +171,11 @@ nav a:hover i, nav a:active i, .active {
   background: #fff;
 }
 
+.profile-page{
+  background: #fff;
+  height: 100vh;
+}
+
 .profil {
   box-sizing: border-box;
 }
@@ -359,9 +364,7 @@ footer.post-detail-page {
 
 /* News */
 
-#news, #donation, #home, #app, #notification, #profile {
-  margin-top: 50px;
-}
+
 
 .post img {
   width: 100%;
@@ -897,6 +900,16 @@ ul, li {
 .tgl-light:checked+.tgl-btn {
   background: #1DA1F2;
 }
+.main-content{
+  margin: 0;
+}
+
+.nav {
+  display: none;
+}
+#news, #donation, #home, #app, #notification {
+  margin-top: 50px;
+}
 
 /* Desktop Mode */
 
@@ -906,9 +919,7 @@ ul, li {
     display: flex;
     justify-content: center;
   }
-  .main-content {
-    width: 600px;
-  }
+
   .main-content-login {
     width: 400px;
   }
@@ -922,16 +933,28 @@ ul, li {
     position: relative;
     margin-top: 40px;
   }
-  .header {
-    display: none;
-  }
+
   .photo img{
     width: 40px;
     height: 40px;
   }
+
+  .main-content{
+    width: 100%;
+  }
+  .notif-page{
+    height: 100vh;
+    background: #fff;
+  }
 }
 
 @media screen and (min-width: 982px) {
+  #profile {
+    margin-top: 50px;
+  }
+  .main-content {
+    width: 600px;
+  }
   .side-content {
     display: block;
     width: 360px;
@@ -940,6 +963,9 @@ ul, li {
     margin-top: 10px;
   }
   nav {
+    display: none;
+  }
+  .header {
     display: none;
   }
   .search-box {
@@ -1051,5 +1077,11 @@ ul, li {
   ul.ul-profile li {
     font-size: 16px;
     font-weight: 500;
+  }
+  .notif-page{
+    height: auto;
+  }
+  .profile-page{
+    height: auto;
   }
 }
