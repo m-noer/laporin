@@ -88,7 +88,7 @@ var post = new Vue({
 });
 
 
-Vue.component('todo-form', {
+Vue.component('comment', {
   template: '<form class="tulis-comment" @submit.prevent="todoEvent"> <input type="text" v-model="newTodo" placeholder="Tulis komentar disini...">' +
             '<input type="submit" value="POST" onclick="scrollWin()"></form>',
   data: function () {

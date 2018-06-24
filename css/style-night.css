@@ -17,7 +17,8 @@ html {
 body {
   /* font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   font-family: "Segoe UI", sans-serif;
-  background: #E6ECF0;
+  background: #D3D6DB;
+  background: #141D26;
   line-height: 1.4;
   overflow-x: hidden;
   margin: 0;
@@ -48,14 +49,14 @@ a {
 nav {
   height: 50px;
   width: 100%;
-  background: #fff;
+  background: #182430;
   display: flex;
   align-items: center;
   text-align: center;
   position: fixed;
   bottom: 0;
   z-index: 5;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #203141;
 }
 
 .nav {
@@ -64,7 +65,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #babec6;
+  color: #8899A6;
 }
 
 nav a:hover i, nav a:active i, .active {
@@ -80,7 +81,7 @@ nav a:hover i, nav a:active i, .active {
 .search-box {
   height: 50px;
   width: 100%;
-  background: #1DA1F2;
+  background: #243447;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,11 +97,11 @@ nav a:hover i, nav a:active i, .active {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: #1B95E0;
+  background: #141D26;
 }
 
 .input-box i {
-  color: #fff;
+  color: #60778b;
   margin-left: 10px;
 }
 
@@ -113,12 +114,12 @@ nav a:hover i, nav a:active i, .active {
   font-weight: 500;
   margin-right: 5px;
   margin-left: 10px;
-  background: #1B95E0;
+  background: #141D26;
   box-sizing: border-box;
 }
 
 .search-box input::placeholder {
-  color: #fff;
+  color: #60778b;
   font-size: 14px;
   letter-spacing: 0.05em;
 }
@@ -127,7 +128,7 @@ nav a:hover i, nav a:active i, .active {
 
 .lapor, .dinas {
   height: 65px;
-  background: #fff;
+  background: #182430;
   padding: 15px;
   font-size: 16px;
   box-sizing: border-box;
@@ -155,8 +156,8 @@ nav a:hover i, nav a:active i, .active {
 
 .post {
   margin-top: 10px;
-  color: #2e2e2e;
-  background: white;
+  color: #e2e2e2;
+  background: #182430;
 }
 
 .post:last-child {
@@ -165,7 +166,7 @@ nav a:hover i, nav a:active i, .active {
 
 .box {
   padding: 1em;
-  background: #fff;
+  background: #182430;
 }
 
 .profile-page{
@@ -184,7 +185,7 @@ nav a:hover i, nav a:active i, .active {
 
 .profil p {
   font-size: 12px;
-  color: #AFB3BD;
+  color: #e2e2e2;
 }
 
 .photo {
@@ -223,9 +224,9 @@ nav a:hover i, nav a:active i, .active {
 .box2 {
   height: 40px;
   border-top: 1px solid #eee;
-  background: #fff;
+  background: #182430;
   text-align: center;
-  color: #657786;
+  color: #8d8f94;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -242,7 +243,7 @@ nav a:hover i, nav a:active i, .active {
 
 .box2 a {
   text-decoration: none;
-  color: #657786;
+  color: #8d8f94;
 }
 
 .box2 p:hover {
@@ -975,7 +976,7 @@ ul, li {
     margin-top: 10px;
   }
   .detail p {
-    font-size: 16px;
+    font-size: 15px;
   }
   .side-content h2 {
     padding: 10px;
@@ -985,10 +986,7 @@ ul, li {
   .post {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09);
   }
-  .box {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-  }
+
   .new-donasi, .hot-news {
     margin: 10px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09);
@@ -1010,10 +1008,10 @@ ul, li {
     align-items: center;
     height: 60px;
     width: 100%;
-    background: #fff;
+    background: #243447;
+    color: #babec6;
     margin: 0 auto;
     margin-bottom: 10px;
-    border-bottom: 1px solid #eee;
     position: fixed;
     top: 0;
     z-index: 999;
@@ -1040,7 +1038,6 @@ ul, li {
   }
   li i {
     color: #b0bbc7;
-
   }
   li .active i{
     color: #1DA1F2;
@@ -1067,6 +1064,7 @@ ul, li {
   ul.ul-profile li {
     font-size: 16px;
     font-weight: 400;
+    color: #babec6;
   }
   .notif-page{
     height: auto;
