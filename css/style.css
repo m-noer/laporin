@@ -1022,33 +1022,44 @@ ul, li {
     top: 0;
     z-index: 999;
   }
+
+  .user-profile{
+
+  }
+
   .desktop-menu {
     width: 985px;
     margin: 0 auto;
   }
+
   .nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 10px 20px;
   }
+
   .nav li {
     display: inline;
   }
+
   .nav li a {
     padding: 10px;
     margin-right: 20px;
   }
+
   .nav a{
     font-size: 18px;
   }
+
   li i {
     color: #b0bbc7;
-
   }
+
   li .active i{
     color: #1DA1F2;
   }
+
   li input[type=text]{
     height: 35px;
     width: 330px;
@@ -1060,27 +1071,34 @@ ul, li {
     font-size: 15px;
     letter-spacing: 0.04em;
   }
+
   li input[type=text]:focus{
     background: none;
     border: 2px solid #1DA1F2;
   }
+
   li .photo img, li .photo {
     width: 35px;
     height: 35px;
   }
+
   ul.ul-profile li {
     font-size: 16px;
     font-weight: 400;
   }
+
   .notif-page{
     height: auto;
   }
+
   .profile-page{
     height: auto;
   }
+
   .donate{
     z-index: 9999;
   }
+
   .donate input{
     width: 500px;
   }
