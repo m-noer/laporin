@@ -377,7 +377,7 @@ footer.post-detail-page {
   display: flex;
   align-items: center;
   padding: 10px;
-  background: #fff;
+  background: #182430;
   border-bottom: 1px solid #eee;
 }
 
@@ -393,6 +393,7 @@ footer.post-detail-page {
 
 .notif-content {
   padding: 5px;
+  background: #182430;
 }
 
 .notif-content p:last-child {

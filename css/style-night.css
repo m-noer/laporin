@@ -376,7 +376,7 @@ footer.post-detail-page {
 
 .header {
   height: 50px;
-  background: #1DA1F2;
+  background: #243447;
   text-align: center;
 }
 
@@ -391,7 +391,7 @@ footer.post-detail-page {
   display: flex;
   align-items: center;
   padding: 10px;
-  background: #fff;
+  background: #182430;
   border-bottom: 1px solid #eee;
 }
 
@@ -411,6 +411,7 @@ footer.post-detail-page {
 
 .notif-content {
   padding: 5px;
+  color: #eee;
 }
 
 .notif-content p:last-child {
@@ -771,12 +772,19 @@ footer.post-detail-page {
   height: 100%;
 }
 
+#menu .main-content p,
+#menu .main-content a,
+#profile .side-content p,
+#profile .side-content a {
+  color: #eee;
+}
+
 .menu, .top-menu {
   margin-top: 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #182430;
 }
 
 .top-menu {

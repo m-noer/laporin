@@ -9,43 +9,41 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style-night.css">
     <link rel="manifest" href="./manifest.json">
-    <script src="js/vue.min.js" charset="utf-8"></script>
   </head>
   <body>
-
-    <div id="home" >
+    <div id="donation">
       <nav>
-        <div class="cell isi-laporan">
-          <a href="home-dark.html" class="active">
-            <i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
-          </a>
-        </div>
-        <div class="cell isi-laporan">
-          <a href="news-dark.html">
-            <i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
-          </a>
-        </div>
-        <div class="cell isi-laporan">
-          <a href="donation-dark.html">
-            <i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
-          </a>
-        </div>
-        <div class="cell isi-laporan">
-          <a href="notification-dark.html">
-            <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
-          </a>
-        </div>
-        <div class="cell isi-laporan">
-          <a href="menu-dark.html">
-            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-          </a>
-        </div>
+      	<div class="cell isi-laporan">
+      		<a href="home-dark.html" >
+      			<i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="news-dark.html">
+      			<i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="donation-dark.html" class="active">
+      			<i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="notification-dark.html">
+      			<i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+      		</a>
+      	</div>
+      	<div class="cell isi-laporan">
+      		<a href="menu-dark.html">
+      			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+      		</a>
+      	</div>
       </nav>
       <div class="nav">
         <div class="desktop-menu">
           <ul>
             <li>
-              <a href="home-dark.html" class="active">
+              <a href="home-dark.html">
                 <i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
               </a>
             </li>
@@ -55,7 +53,7 @@
               </a>
             </li>
             <li>
-              <a href="donation-dark.html">
+              <a href="donation-dark.html" class="active">
                 <i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
               </a>
             </li>
@@ -85,58 +83,121 @@
 
         </div>
       </div>
-      <div class="search-box" id="search">
-        <div class="input-box">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="text" placeholder="Search" v-model="search">
+      <div id="donate">
+        <div class="donate">
+          <div class="logo">
+            <img src="https://image.flaticon.com/icons/svg/923/923385.svg" alt="Laporin Logo">
+          </div>
+          <div class="form">
+            <form action="donation-dark.html">
+              <div class="donate-form">
+                <input type="number" placeholder="Masukkan Jumlah Donasi">
+              </div>
+              <div class="donate">
+                <input type="submit" value="Donate">
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+      <div class="search-box">
+      	<div class="input-box">
+      		<i class="fa fa-search" aria-hidden="true"></i>
+      		<input type="text" placeholder="Search" v-model="search">
+      	</div>
       </div>
       <div class="content">
         <div class="main-content">
-            <div class="lapor">
-              <img src="images/profil.jpg" alt="profil picture">
-              <span>Tulis laporanmu disini</span>
-            </div>
-            <!-- End of .lapor -->
-            <div id="laporan">
-              <div class="post" v-for="lapor in searchLaporan">
-                <div class="box" >
-                  <div class="profil">
-                    <div class="photo">
-                      <img v-bind:src="lapor.img" alt="profil picture">
-                    </div>
-                    <div class="user">
-                      <h1>{{lapor.name}}</h1>
-                      <p>{{lapor.time}}</p>
-                    </div>
-                  </div>
-                  <div class="detail">
-                    <h1>{{lapor.title}} > <span>{{lapor.progress}} %</span></h1>
-                    <p>{{lapor.content}}</p>
-                  </div>
-                  <div class="category">
-                    <div class="tag">
-                      <b>#Dinas Terkait</b>
-                      <b>#Indonesia</b>
-                    </div>
-                  </div>
+          <div class="post">
+            <div class="box" >
+              <div class="profil">
+                <div class="photo">
+                  <img src="images/logo.png" alt="profil picture">
                 </div>
-                <div class="box2">
-                  <div class="row">
-                    <div class="col-4 like icon">
-                      <p onclick="sound()"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Up</p>
-                    </div>
-                    <div class="col-4 share icon">
-                      <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Komen</a></p>
-                    </div>
-                    <div class="col-4 Comment icon">
-                      <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
-                    </div>
-                  </div>
+                <div class="user">
+                  <h1>Laporin Donasi</h1>
+                  <p>1 minutes ago</p>
                 </div>
               </div>
+              <div class="detail">
+                <img src="images/news/banjir.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
             </div>
-            <!-- End of .laporan-post -->
+            <div class="donasi">
+              <div class="cell left">
+                <img src="images/map.svg" alt="coin laporin">
+                Lokasi
+              </div>
+              <div class="cell right">
+                Jakarta
+              </div>
+            </div>
+            <div class="donasi">
+              <div class="cell left">
+                <img src="images/coin.svg" alt="coin laporin">
+                Total Donasi
+              </div>
+              <div class="cell right">
+                Rp 21.023.888
+              </div>
+            </div>
+            <div class="donasi">
+              <div class="cell left">
+                <img src="images/people.svg" alt="coin laporin">
+                Total Pengungsi
+              </div>
+              <div class="cell right">
+                888 Jiwa
+              </div>
+            </div>
+            <input onclick="donate()" type="button" name="" value="Donation">
+          </div>
+          <div class="post">
+            <div class="box" >
+              <div class="profil">
+                <div class="photo">
+                  <img src="images/logo.png" alt="profil picture">
+                </div>
+                <div class="user">
+                  <h1>Laporin Donasi</h1>
+                  <p>1 minutes ago</p>
+                </div>
+              </div>
+              <div class="detail">
+                <img src="images/news/meletus.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+            </div>
+            <div class="donasi">
+              <div class="cell left">
+                <img src="images/map.svg" alt="coin laporin">
+                Lokasi
+              </div>
+              <div class="cell right">
+                Jakarta
+              </div>
+            </div>
+            <div class="donasi">
+              <div class="cell left">
+                <img src="images/coin.svg" alt="coin laporin">
+                Total
+              </div>
+              <div class="cell right">
+                Rp 121.739.235
+              </div>
+            </div>
+            <div class="donasi">
+              <div class="cell left">
+                <img src="images/people.svg" alt="coin laporin">
+                Total Pengungsi
+              </div>
+              <div class="cell right">
+                888 Jiwa
+              </div>
+            </div>
+            <input onclick="donate()" type="button" name="" value="Donation">
+          </div>
         </div>
         <div class="side-content">
           <div class="new-donasi">
@@ -180,7 +241,7 @@
                   Total Pengungsi
                 </div>
                 <div class="cell right">
-                  888 Jiwa
+                  105 Jiwa
                 </div>
               </div>
               <input onclick="donasiin()" type="button" name="" value="Donation">
@@ -235,25 +296,37 @@
 
         </div>
       </div>
+
     </div>
+    <script src="js/vue.min.js" charset="utf-8"></script>
+    <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/hammer.min.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <script type="text/javascript">
       var bleep = new Audio();
-      bleep.src = "button.mp3";
+      bleep.src = "btnDonasi.mp3";
       function sound() {
         bleep.play();
       }
-      var post = document.getElementById('home');
+
+      function donate() {
+        //alert("tes");
+        document.getElementById('donate').style.display = "flex";
+
+        //bleep.play();
+      }
+
+      var post = document.getElementById('donation');
 
       var postPg = new Hammer(post);
 
-      postPg.on("swipeleft", function(ev) {
+      postPg.on("swiperight", function(ev) {
         window.location.href = "news-dark.html";
       });
-      function donasiin() {
-        window.location.href = "donation-dark.html"
-      }
+      postPg.on("swipeleft", function(ev) {
+        window.location.href = "notification-dark.html";
+      });
+
     </script>
   </body>
 </html>

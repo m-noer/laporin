@@ -7,7 +7,7 @@
     <title>Laporin</title>
     <link rel="icon" href="images/icons/laporin.ico" type="image/gif" sizes="any">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-night.css">
     <link rel="manifest" href="./manifest.json">
     <script src="js/vue.min.js" charset="utf-8"></script>
   </head>
@@ -15,27 +15,27 @@
     <div id="menu">
       <nav>
       	<div class="cell isi-laporan">
-      		<a href="home.html">
+      		<a href="home-dark.html">
       			<i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="news.html">
+      		<a href="news-dark.html">
       			<i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="donation.html">
+      		<a href="donation-dark.html">
       			<i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="notification.html">
+      		<a href="notification-dark.html">
       			<i class="fa fa-globe fa-lg" aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="menu.html"  class="active">
+      		<a href="menu-dark.html"  class="active">
       			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
       		</a>
       	</div>
@@ -46,7 +46,7 @@
       <div class="content">
         <div class="main-content">
           <div class="top-menu content">
-            <a href="profile.html" class="item">
+            <a href="profile-dark.html" class="item">
               <div class="icon">
                 <i class="fa fa-user fa-lg" aria-hidden="true"></i>
               </div>
@@ -107,11 +107,11 @@
           </div>
 
           <div class="menu content">
-            <a href="menu-dark.html" class="item">
+            <a href="menu.html" class="item">
               <div class="icon">
                 <i class="fa fa-moon-o fa-lg" aria-hidden="true"></i>
               </div>
-              Dark Mode
+              Light Mode
             </a>
           </div>
 
@@ -138,7 +138,7 @@
       var postPg = new Hammer(post);
 
       postPg.on("swiperight", function(ev) {
-        window.location.href = "notification.html";
+        window.location.href = "notification-dark.html";
       });
     </script>
   </body>
