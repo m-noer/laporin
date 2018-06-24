@@ -11,40 +11,117 @@
     <link rel="manifest" href="./manifest.json">
     <script src="js/vue.min.js" charset="utf-8"></script>
   </head>
-  <body>
-    <div id="menu">
+  <body style="background:#141D26">
+    <div id="profile">
       <nav>
       	<div class="cell isi-laporan">
-      		<a href="home-dark.html">
+      		<a href="dark-theme/home-dark.html" >
       			<i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="news-dark.html">
+      		<a href="dark-theme/news-dark.html">
       			<i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="donation-dark.html">
+      		<a href="dark-theme/donation-dark.html" class="active">
       			<i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="notification-dark.html">
+      		<a href="dark-theme/notification-dark.html">
       			<i class="fa fa-globe fa-lg" aria-hidden="true"></i>
       		</a>
       	</div>
       	<div class="cell isi-laporan">
-      		<a href="menu-dark.html"  class="active">
+      		<a href="dark-theme/menu-dark.html">
       			<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
       		</a>
       	</div>
       </nav>
-      <div class="header">
-        <img src="images/logo_laporin.png" alt="">
+      <div class="nav">
+        <div class="desktop-menu">
+          <ul>
+            <li>
+              <a href="dark-theme/home-dark.html">
+                <i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="dark-theme/news-dark.html">
+                <i class="fa fa-newspaper-o  fa-lg"  aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="dark-theme/donation-dark.html" class="active">
+                <i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="dark-theme/notification-dark.html">
+                <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <input type="text" placeholder="Search" v-model="search">
+            </li>
+            <li>
+              <ul class="ul-profile">
+                <a href="dark-theme/profile-dark.html">
+                  <li>
+                    <div class="photo">
+                      <img src="images/profil.jpg" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    Safa Kalila
+                  </li>
+                </a>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
       </div>
       <div class="content">
         <div class="main-content">
+          <div class="profile-page">
+            <div class="account">
+              <div class="head">
+                <!-- <a href="menu-dark.html"><span class="close">&times;</span></a> -->
+                <img src="images/profil.jpg" alt="">
+                <h1>Safa Kalila</h1>
+                <i class="fa fa-map-marker fa-lg"></i> Yogyakarta
+              </div>
+              <div class="total">
+                <div class="cell">
+                  <i class="fa fa-pencil-square-o fa-lg"  aria-hidden="true"></i>
+                  <h3>21 Laporin</h3>
+                </div>
+                <div class="cell">
+                  <i class="fa fa-commenting-o fa-lg"  aria-hidden="true"></i>
+                  <h3>18 Komenin</h3>
+                </div>
+                <div class="cell">
+                  <i class="fa fa-handshake-o fa-lg"  aria-hidden="true"></i>
+                  <h3>5 Donasiin</h3>
+                </div>
+              </div>
+              <div class="detail-profil">
+                <h2>About Me</h2>
+                <p>Interested in: manufacturing, technology and automation, general management: leadership and strategical thinking, youth development, and community empowerment.</p>
+                <hr>
+                <h2>Work</h2>
+                <p>Project Engineer for Personal Care Factory</p>
+                <hr>
+                <h2>Born</h2>
+                <p>June 4, 1993</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side-content">
           <div class="top-menu content">
             <a href="profile-dark.html" class="item">
               <div class="icon">
@@ -107,7 +184,7 @@
           </div>
 
           <div class="menu content">
-            <a href="menu.html" class="item">
+            <a href="profile.html" class="item">
               <div class="icon">
                 <i class="fa fa-moon-o fa-lg" aria-hidden="true"></i>
               </div>
@@ -126,6 +203,7 @@
             </a>
           </div>
         </div>
+        </div>
       </div>
     </div>
 
@@ -133,12 +211,12 @@
     <script src="js/main.js" charset="utf-8"></script>
     <script type="text/javascript">
 
-      var post = document.getElementById('menu');
+      var post = document.getElementById('profile');
 
       var postPg = new Hammer(post);
 
       postPg.on("swiperight", function(ev) {
-        window.location.href = "notification-dark.html";
+        window.location.href = "menu-dark.html";
       });
     </script>
   </body>
