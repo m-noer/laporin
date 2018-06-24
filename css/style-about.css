@@ -1,6 +1,6 @@
 body {
   background: #1DA1F2;
-  font-family: sans-serif;
+  font-family: "Segoe UI", sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -47,25 +47,33 @@ section span {
 }
 
 .btn {
-  height: 40px;
-  width: 100px;
   background: none;
   border: 1px solid white;
   cursor: pointer;
   overflow: hidden;
-
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
 }
 
 .btn:hover {
   background: #eee;
-  color: #212121;
+  color: #1DA1F2;
 
 }
 
-.btn a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.cell {
+  flex: 1;
 }
 
 @media screen and (max-width: 560px) {
@@ -75,6 +83,11 @@ section span {
   .row {
     width: 90%;
     margin: auto;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -94,20 +107,4 @@ section span {
   top: 50%;
   transform: translateY(-40%);
   transition: ease-in;
-}
-
-#lottie {
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  display: block;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  text-align: center;
-  opacity: 1;
-}
-
-#bm {
-  height: 100vh;
-  width: 100%;
 }
