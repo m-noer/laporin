@@ -68,6 +68,22 @@ var lapor = [
   }
 ]
 
+var news = [
+  {
+    profileImg:'images/department/lingdup.jpg',
+    name: 'Dinas Lingkungan Hidup',
+    time: '2 days ago',
+    img: 'images/news/news2.jpg',
+    content: 'Para scholars TSA Medan yang bersemangat menanam bibit pohon bakau'
+  },
+  {
+    profileImg:'images/department/pu.jpg',
+    name: 'Dinas Pekerjaan Umum',
+    time: '6 days ago',
+    img: 'images/news/news1.jpg',
+    content: 'Pemerintah memastikan, jalan trans Papua yang memiliki panjang total 4.329,5 km bakal tersambung seluruhnya pada tahun 2019 mendatang. Panjang jalan tersebut merupakan gabungan dari jalan Trans Papua di Provinsi Papua yang sepanjang 3.259,45 km dan jalan Trans Papua di Provinsi Papua Barat sepanjang 1.070,62 km.'
+  }
+]
 
 
 var post = new Vue({
@@ -82,6 +98,23 @@ var post = new Vue({
 
       return this.laporan.filter(function (e) {
         return e.title.toLowerCase().match(_this.search.toLowerCase()) || e.content.toLowerCase().match(_this.search.toLowerCase());
+      });
+    }
+  }
+});
+
+var postNews = new Vue({
+  el:'#news',
+  data: {
+    laporan: news,
+    search: ''
+  },
+  computed: {
+    searchLaporan: function searchLaporan() {
+      var _this = this;
+
+      return this.laporan.filter(function (e) {
+        return e.content.toLowerCase().match(_this.search.toLowerCase()) || e.content.toLowerCase().match(_this.search.toLowerCase());
       });
     }
   }

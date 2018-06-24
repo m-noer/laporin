@@ -573,12 +573,12 @@ footer.post-detail-page {
 
 /* Style the Image Used to Trigger the Modal */
 
-#myImg {
+.myImg {
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {
+.myImg:hover {
   opacity: 0.7;
 }
 
