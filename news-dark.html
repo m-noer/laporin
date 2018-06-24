@@ -90,144 +90,22 @@
           <input type="text" placeholder="Search" v-model="search">
         </div>
       </div>
-      <div>
+      <div class="content">
         <div class="main-content">
-          <div class="post">
+          <div class="post" v-for="news in searchLaporan">
             <div class="box" >
               <div class="profil">
                 <div class="photo">
-                  <img src="images/department/pu.jpg" alt="profil picture">
+                  <img v-bind:src="news.profileImg" alt="profil picture">
                 </div>
                 <div class="user">
-                  <h1>Dinas Pekerjaan Umum</h1>
-                  <p>1 minutes ago</p>
+                  <h1>{{news.name}}</h1>
+                  <p>{{news.time}}</p>
                 </div>
               </div>
               <div class="detail">
-                <img id="myImg" src="images/news/news1.jpg" alt="tes">
-
-                <div id="myModal" class="modal">
-
-                  <span class="close">&times;</span>
-
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-                <p id="isi">Pemerintah memastikan, jalan trans Papua yang memiliki panjang total 4.329,5 km bakal tersambung seluruhnya pada tahun 2019 mendatang. Panjang jalan tersebut merupakan gabungan dari jalan Trans Papua di Provinsi Papua yang sepanjang 3.259,45 km dan jalan Trans Papua di Provinsi Papua Barat sepanjang 1.070,62 km.</p>
-              </div>
-            </div>
-            <div class="box2">
-              <div class="row">
-                <div class="col-4 like icon">
-                  <p onclick="sound()"><i class="fa fa-heart" aria-hidden="true"></i> Love</p>
-                </div>
-                <div class="col-4 share icon">
-                  <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Komen</a></p>
-                </div>
-                <div class="col-4 Comment icon">
-                  <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="box" >
-              <div class="profil">
-                <div class="photo">
-                  <img src="images/department/lingdup.jpg" alt="profil picture">
-                </div>
-                <div class="user">
-                  <h1>Dinas Pekerjaan Umum</h1>
-                  <p>1 minutes ago</p>
-                </div>
-              </div>
-              <div class="detail">
-                <img id="myImg" src="images/news/news2.jpg" alt="news2">
-
-                <div id="myModal" class="modal">
-
-                  <span class="close">&times;</span>
-
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-                <p id="isi">Para scholars TSA Medan yang bersemangat menanam bibit pohon bakau</p>
-              </div>
-            </div>
-            <div class="box2">
-              <div class="row">
-                <div class="col-4 like icon">
-                  <p onclick="sound()"><i class="fa fa-heart" aria-hidden="true"></i> Love</p>
-                </div>
-                <div class="col-4 share icon">
-                  <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Komen</a></p>
-                </div>
-                <div class="col-4 Comment icon">
-                  <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="box" >
-              <div class="profil">
-                <div class="photo">
-                  <img src="images/department/pu.jpg" alt="profil picture">
-                </div>
-                <div class="user">
-                  <h1>Dinas Pekerjaan Umum</h1>
-                  <p>1 minutes ago</p>
-                </div>
-              </div>
-              <div class="detail">
-                <img id="myImg" src="images/news/news1.jpg" alt="tes">
-
-                <div id="myModal" class="modal">
-
-                  <span class="close">&times;</span>
-
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-                <p id="isi">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-              </div>
-            </div>
-            <div class="box2">
-              <div class="row">
-                <div class="col-4 like icon">
-                  <p onclick="sound()"><i class="fa fa-heart" aria-hidden="true"></i> Love</p>
-                </div>
-                <div class="col-4 share icon">
-                  <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Komen</a></p>
-                </div>
-                <div class="col-4 Comment icon">
-                  <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="box" >
-              <div class="profil">
-                <div class="photo">
-                  <img src="images/department/lingdup.jpg" alt="profil picture">
-                </div>
-                <div class="user">
-                  <h1>Dinas Pekerjaan Umum</h1>
-                  <p>1 minutes ago</p>
-                </div>
-              </div>
-              <div class="detail">
-                <img id="myImg" src="images/news/news2.jpg" alt="news2">
-
-                <div id="myModal" class="modal">
-
-                  <span class="close">&times;</span>
-
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
-                </div>
-                <p id="isi">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <img class="myImg" v-bind:src="news.img" alt="news2">
+                <p class="isi">{{news.content}}</p>
               </div>
             </div>
             <div class="box2">
