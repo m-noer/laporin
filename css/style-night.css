@@ -223,7 +223,7 @@ nav a:hover i, nav a:active i, .active {
 
 .box2 {
   height: 40px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #141D26;
   background: #182430;
   text-align: center;
   color: #8d8f94;
@@ -286,8 +286,8 @@ nav a:hover i, nav a:active i, .active {
 .comment {
   display: flex;
   padding: 15px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #141D26;
+  border-bottom: 1px solid #141D26;
   background: #fff;
 }
 
@@ -392,7 +392,7 @@ footer.post-detail-page {
   align-items: center;
   padding: 10px;
   background: #182430;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #141D26;
 }
 
 .notif:first-child {
@@ -493,7 +493,7 @@ footer.post-detail-page {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #141D26;
   margin-right: auto;
   margin-left: auto;
   display: flex;
