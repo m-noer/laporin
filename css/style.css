@@ -14,6 +14,10 @@ html {
   padding: 0;
 }
 
+input{
+  cursor: pointer;
+}
+
 body {
   /* font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   font-family: "Segoe UI", sans-serif;
@@ -1073,5 +1077,11 @@ ul, li {
   }
   .profile-page{
     height: auto;
+  }
+  .donate{
+    z-index: 9999;
+  }
+  .donate input{
+    width: 500px;
   }
 }
