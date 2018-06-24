@@ -1058,7 +1058,7 @@ ul, li {
   }
   li input[type=text]:focus{
     background: none;
-    border: 1px solid #1DA1F2;
+    border: 2px solid #1DA1F2;
   }
   li .photo img, li .photo {
     width: 35px;
