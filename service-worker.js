@@ -7,17 +7,8 @@ const CACHE_NAMESPACE = 'laporin-'
 const PRECACHE = CACHE_NAMESPACE + 'precache-v3'
 const PRECACHE_LIST = [
   '/',
-  '/index.html',
-  '/Picture1.png',
-  '/Picture2.png',
   '/css/style.min.css',
-  '/font-awesome/css/font-awesome.min.css',
   '/js/main.min.js',
-  '/js/vue.min.js',
-  '/js/jquery.min.js',
-  '/js/hammer.min.js',
-  '/images/',
-  '/font-awesome/css/font-awesome.min.css',
   '/button-09.mp3'
 ]
 const RUNTIME = CACHE_NAMESPACE + 'runtime-v1'
