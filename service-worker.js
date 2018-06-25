@@ -1,4 +1,3 @@
-// sw.js
 
 // CACHE_NAMESPACE
 // CacheStorage is shared between all sites under same domain.
@@ -11,18 +10,14 @@ const PRECACHE_LIST = [
   'index.html',
   'Picture1.png',
   'Picture2.png',
-  '/css/style.css',
-  '/css/bootstrap-grid.css',
+  'css/style.min.css',
   'font-awesome/css/font-awesome.min.css',
-  '/js/main.js',
-  '/js/vue.min.js',
-  '/js/jquery.min.js',
-  '/js/hammer.min.js',
-  'images/profil.jpeg',
-  'images/profil1.jpg',
-  'images/profil2.jpg',
-  'images/profil3.jpg',
-  'images/profil4.jpg',
+  'js/main.min.js',
+  'js/vue.min.js',
+  'js/jquery.min.js',
+  'js/hammer.min.js',
+  'images/',
+  'font-awesome/css/font-awesome.min.css',
   'button-09.mp3'
 ]
 const RUNTIME = CACHE_NAMESPACE + 'runtime-v1'
