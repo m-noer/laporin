@@ -199,25 +199,3 @@ function signIn() {
   formLogin.style.display = "block";
   formSignUp.style.display = "none"
 }
-
-$(".main").onepage_scroll({
-   sectionContainer: "section",
-   easing: "cubic-bezier(0.175, 0.885, 0.420, 1.210)",
-   animationTime: 1000,
-   pagination: true,
-   updateURL: false,
-   beforeMove: function(index) {},
-   afterMove: function(index) {},
-   loop: true,
-   keyboard: true,
-   responsiveFallback: false,
-
-   direction: "vertical"            
-});
-
-$(document).ready(function() {
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 3000);
-
-});
