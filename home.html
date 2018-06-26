@@ -99,7 +99,7 @@
           <a class="popup-with-zoom-anim" href="#small-dialog">
             <div class="lapor">
               <img src="images/profil.jpg" alt="profil picture">
-              <span>Write Your Problem and Laporin</span>
+              <span>Tulis Masalahmu dan Laporin</span>
             </div>
           </a>
 
@@ -110,12 +110,41 @@
                   <input type="text" placeholder="Title">
                 </div>
                 <div class="detail-post">
-                  <textarea name="name" rows="8" cols="500px" placeholder="Write your problem and Laporin"></textarea>
+                  <textarea name="name" rows="8" cols="500px" placeholder="Tulis Masalahmu dan Laporin"></textarea>
                 </div>
                 <div class="">
                   <input onclick="window.location.href='home.html'" type="submit" value="Laporin" onclick="toHome()">
                 </div>
               </form>
+            </div>
+          </div>
+
+          <div id="share" class="zoom-anim-dialog mfp-hide">
+            <div class="menu">
+              <a href="home.html" class="item">
+                <img src="images/fb.svg" alt="facebook share">
+                <div class="menu-content">
+                  <p>Facebook</p>
+                </div>
+              </a>
+              <a href="home.html" class="item">
+                <img src="images/twitter.svg" alt="facebook share">
+                <div class="menu-content">
+                  <p>Twitter</p>
+                </div>
+              </a>
+              <a href="home.html" class="item">
+                <img src="images/wa.svg" alt="facebook share">
+                <div class="menu-content">
+                  <p>WhatsApp</p>
+                </div>
+              </a>
+              <a href="home.html" class="item">
+                <img src="images/ig.svg" alt="facebook share">
+                <div class="menu-content">
+                  <p>Instagram</p>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -152,7 +181,10 @@
                     <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Komen</a></p>
                   </div>
                   <div class="col-4 Comment icon">
-                    <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
+                    <a onclick="sound()" class="popup-with-zoom-anim" href="#share">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i> Share
+                    </a>
+                    <!-- <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p> -->
                   </div>
                 </div>
               </div>
@@ -282,7 +314,7 @@
       		preloader: false,
 
       		midClick: true,
-      		removalDelay: 300,
+      		removalDelay: 3000,
       		mainClass: 'my-mfp-zoom-in'
       	});
 

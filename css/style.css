@@ -465,7 +465,6 @@ footer.post-detail-page {
   color: #1DA1F2;
   height: 50px;
   border-bottom: 1px solid #eee;
-  letter-spacing: 0.03em;
 }
 
 .form textarea {
@@ -835,6 +834,11 @@ footer.post-detail-page {
   border-radius: 50%;
 }
 
+#share .menu img {
+  width: 30px;
+  border-radius: 0;
+}
+
 .item {
   display: flex;
   align-items: center;
@@ -957,7 +961,7 @@ ul, li {
 }
 /* Magnific */
 /* Styles for dialog window */
-#small-dialog {
+#small-dialog{
   background: #fff;
   padding: 50px 0px;
   text-align: left;
@@ -970,11 +974,20 @@ ul, li {
   position: fixed;
 }
 
-#small-dialog .profile img{
-  width: 40px;
-  border-radius: 50%;
-  text-align: left;
+#share {
+  height: auto;
+  width: 96%;
+  background: #fff;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 2%;
+  right: 2%;
+  z-index: 5;
+  border-top: 1px solid #eee;
 }
+
 
 /* start state */
 .my-mfp-zoom-in .zoom-anim-dialog {
@@ -1278,13 +1291,18 @@ opacity: 0;
     width: 500px;
   }
 
-  #small-dialog {
+  #small-dialog, #share {
     background: #fff;
-    padding: 50px 0px;
+    padding: 30px 0px;
     text-align: left;
     width: 80%;
+    max-width: 900px;
     height: auto;
     margin: 0 auto;
     position: relative;
+  }
+
+  #share {
+    width: 400px;
   }
 }
