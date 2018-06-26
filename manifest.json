@@ -1,8 +1,8 @@
 {
   "name": "Laporin",
   "short_name": "Laporin",
-  "theme_color": "#141D26",
-  "background_color": "#1da1f2",
+  "theme_color": "#000",
+  "background_color": "#000",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
