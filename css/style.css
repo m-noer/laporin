@@ -824,6 +824,10 @@ footer.post-detail-page {
   background: #fff;
 }
 
+#share .menu {
+  border-radius: 10px;
+}
+
 .top-menu {
   margin-top: 45px;
 }
@@ -984,7 +988,8 @@ ul, li {
   left: 2%;
   right: 2%;
   z-index: 5;
-  border-top: 1px solid #eee;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 
