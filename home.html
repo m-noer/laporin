@@ -113,7 +113,7 @@
                   <textarea name="name" rows="8" cols="500px" placeholder="Tulis Masalahmu dan Laporin" v-model="newcontent"></textarea>
                 </div>
                 <div class="">
-                  <input type="submit" value="Laporin" v-on:click="addPost" onclick="">
+                  <input type="submit" value="Laporin" v-on:click="addPost" class="popup-modal-dismiss">
                 </div>
               <!-- </form> -->
             </div>
@@ -315,24 +315,10 @@
 
       		midClick: true,
       		removalDelay: 3000,
-      		mainClass: 'my-mfp-zoom-in'
+      		mainClass: 'my-mfp-zoom-in',
+          modal: true
       	});
 
-      	$('.popup-with-move-anim').magnificPopup({
-      		type: 'inline',
-
-      		fixedContentPos: false,
-      		fixedBgPos: true,
-
-      		overflowY: 'auto',
-
-      		closeBtnInside: true,
-      		preloader: false,
-
-      		midClick: true,
-      		removalDelay: 300,
-      		mainClass: 'my-mfp-slide-bottom'
-      	});
       });
     </script>
   </body>
