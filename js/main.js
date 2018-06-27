@@ -89,6 +89,9 @@ var news = [
 var post = new Vue({
   el:'#home',
   data: {
+    seen: true,
+    newtitle: '',
+    newcontent:'',
     laporan: lapor,
     search: ''
   },
@@ -100,8 +103,25 @@ var post = new Vue({
         return e.title.toLowerCase().match(_this.search.toLowerCase()) || e.content.toLowerCase().match(_this.search.toLowerCase());
       });
     }
+  },
+  methods: {
+  addPost: function() {
+    if (this.newtitle.length > 0 && this.newcontent.length > 0) {
+      this.laporan.unshift({
+        img:'images/profil.jpg',
+        name: 'Safa Kalila',
+        time: 'few second ago',
+        title: this.newtitle,
+        progress: '0',
+        content: this.newcontent
+      });
+      this.newtitle = '';
+      this.newcontent = '';
+    }
+    document.getElementById('small-dialog')
   }
-});
+}
+})
 
 var postNews = new Vue({
   el:'#news',

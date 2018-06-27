@@ -14,7 +14,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
   </head>
-  <body>
+  <body id="body">
 
     <div id="home" >
       <nav>
@@ -105,17 +105,17 @@
 
           <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
             <div class="form" id="form-login">
-              <form action="home.html">
+              <!-- <form> -->
                 <div class="tile">
-                  <input type="text" placeholder="Title">
+                  <input type="text" placeholder="Title" v-model="newtitle">
                 </div>
                 <div class="detail-post">
-                  <textarea name="name" rows="8" cols="500px" placeholder="Tulis Masalahmu dan Laporin"></textarea>
+                  <textarea name="name" rows="8" cols="500px" placeholder="Tulis Masalahmu dan Laporin" v-model="newcontent"></textarea>
                 </div>
                 <div class="">
-                  <input onclick="window.location.href='home.html'" type="submit" value="Laporin" onclick="toHome()">
+                  <input type="submit" value="Laporin" v-on:click="addPost" onclick="">
                 </div>
-              </form>
+              <!-- </form> -->
             </div>
           </div>
 
