@@ -105,41 +105,41 @@
 
           <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
             <div class="form" id="form-login">
-              <form action="home.html">
+              <!-- <form> -->
                 <div class="tile">
-                  <input type="text" placeholder="Title">
+                  <input type="text" placeholder="Title" v-model="newtitle">
                 </div>
                 <div class="detail-post">
-                  <textarea name="name" rows="8" cols="500px" placeholder="Tulis Masalahmu dan Laporin"></textarea>
+                  <textarea name="name" rows="8" cols="500px" placeholder="Tulis Masalahmu dan Laporin" v-model="newcontent"></textarea>
                 </div>
                 <div class="">
-                  <input onclick="window.location.href='home.html'" type="submit" value="Laporin" onclick="toHome()">
+                  <input type="submit" value="Laporin" v-on:click="addPost" class="popup-modal-dismiss">
                 </div>
-              </form>
+              <!-- </form> -->
             </div>
           </div>
 
           <div id="share" class="zoom-anim-dialog mfp-hide">
             <div class="menu">
-              <a href="home-dark.html" class="item">
+              <a href="home.html" class="item">
                 <img src="images/fb.svg" alt="facebook share">
                 <div class="menu-content">
                   <p>Facebook</p>
                 </div>
               </a>
-              <a href="home-dark.html" class="item">
+              <a href="home.html" class="item">
                 <img src="images/twitter.svg" alt="facebook share">
                 <div class="menu-content">
                   <p>Twitter</p>
                 </div>
               </a>
-              <a href="home-dark.html" class="item">
+              <a href="home.html" class="item">
                 <img src="images/wa.svg" alt="facebook share">
                 <div class="menu-content">
                   <p>WhatsApp</p>
                 </div>
               </a>
-              <a href="home-dark.html" class="item">
+              <a href="home.html" class="item">
                 <img src="images/ig.svg" alt="facebook share">
                 <div class="menu-content">
                   <p>Instagram</p>
@@ -181,8 +181,8 @@
                     <p><a href="detail-post.html"><i class="fa fa-comment" aria-hidden="true"></i> Komen</a></p>
                   </div>
                   <div class="col-4 Comment icon">
-                    <a onclick="sound()" class="popup-with-zoom-anim" href="#share">
-                      <i class="fa fa-share-alt" aria-hidden="true"></i> Share
+                    <a class="popup-with-zoom-anim" href="#share">
+                      <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p>
                     </a>
                     <!-- <p onclick="sound()"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</p> -->
                   </div>
@@ -318,21 +318,18 @@
       		mainClass: 'my-mfp-zoom-in'
       	});
 
-      	$('.popup-with-move-anim').magnificPopup({
-      		type: 'inline',
-
-      		fixedContentPos: false,
-      		fixedBgPos: true,
-
-      		overflowY: 'auto',
-
-      		closeBtnInside: true,
-      		preloader: false,
-
-      		midClick: true,
-      		removalDelay: 300,
-      		mainClass: 'my-mfp-slide-bottom'
-      	});
+        $(function () {
+          $('.popup-modal').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#username',
+            modal: true
+          });
+          $(document).on('click', '.popup-modal-dismiss', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+          });
+        });
       });
     </script>
   </body>
